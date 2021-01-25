@@ -71,7 +71,7 @@
       <recent name="C:\Users\Dmitriy\WebstormProjects\webdrivertest" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.report:generate">
+  <component name="RunManager" selected="npm.test:chrome:headless">
     <configuration name="report:generate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -142,10 +142,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.report:generate" />
         <item itemvalue="npm.test:chrome" />
         <item itemvalue="npm.test:firefox:headless" />
         <item itemvalue="npm.test:firefox" />
-        <item itemvalue="npm.report:generate" />
         <item itemvalue="npm.test:chrome" />
       </list>
     </recent_temporary>
@@ -215,22 +215,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="update reports" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1572" height="198" key="GridCell.Tab.0.bottom" timestamp="1611604723137">
+    <state width="1572" height="198" key="GridCell.Tab.0.bottom" timestamp="1611608657777">
       <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state width="1572" height="198" key="GridCell.Tab.0.bottom/0.0.1600.852@0.0.1600.852" timestamp="1611604723137" />
-    <state width="1572" height="198" key="GridCell.Tab.0.center" timestamp="1611604723137">
+    <state width="1572" height="198" key="GridCell.Tab.0.bottom/0.0.1600.852@0.0.1600.852" timestamp="1611608657777" />
+    <state width="1572" height="198" key="GridCell.Tab.0.center" timestamp="1611608657777">
       <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state width="1572" height="198" key="GridCell.Tab.0.center/0.0.1600.852@0.0.1600.852" timestamp="1611604723137" />
-    <state width="1572" height="198" key="GridCell.Tab.0.left" timestamp="1611604723137">
+    <state width="1572" height="198" key="GridCell.Tab.0.center/0.0.1600.852@0.0.1600.852" timestamp="1611608657777" />
+    <state width="1572" height="198" key="GridCell.Tab.0.left" timestamp="1611608657777">
       <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state width="1572" height="198" key="GridCell.Tab.0.left/0.0.1600.852@0.0.1600.852" timestamp="1611604723137" />
-    <state width="1572" height="198" key="GridCell.Tab.0.right" timestamp="1611604723137">
+    <state width="1572" height="198" key="GridCell.Tab.0.left/0.0.1600.852@0.0.1600.852" timestamp="1611608657777" />
+    <state width="1572" height="198" key="GridCell.Tab.0.right" timestamp="1611608657777">
       <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state width="1572" height="198" key="GridCell.Tab.0.right/0.0.1600.852@0.0.1600.852" timestamp="1611604723137" />
+    <state width="1572" height="198" key="GridCell.Tab.0.right/0.0.1600.852@0.0.1600.852" timestamp="1611608657777" />
     <state x="291" y="91" key="Vcs.Push.Dialog.v2" timestamp="1611604825915">
       <screen x="0" y="0" width="1600" height="852" />
     </state>
