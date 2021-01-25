@@ -47,9 +47,9 @@ jobs:
           path: allure-report.zip
 
 workflows:
-commit:
-  jobs:
-    - build-and-test
+  commit:
+    jobs:
+      - build-and-test
   nightly:
     triggers:
       - schedule:
