@@ -28,19 +28,19 @@ jobs:
       - run:
           name: Run tests
           command: |
-            wget $(curl https://circleci.com/api/v1.1/project/github/Timuriagudin/WDIO-CI/latest/artifacts?filter=successful -H "Circle-Token $CIRCLE_TOKEN" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_%:-]*') -O allure-previous.zip
-            test -f allure-previous.zip && unzip allure-previous.zip -d allure-previous
+#            wget $(curl https://circleci.com/api/v1.1/project/github/Timuriagudin/WDIO-CI/latest/artifacts?filter=successful -H "Circle-Token $CIRCLE_TOKEN" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_%:-]*') -O allure-previous.zip
+#            test -f allure-previous.zip && unzip allure-previous.zip -d allure-previous
             npm run test:chrome:headless
             npm run report:generate
-            cp -r allure-previous/allure-report/history allure-results
+#            cp -r allure-previous/allure-report/history allure-results
             zip -r allure-report.zip allure-report
       - run:
           when: on_fail
           name: Generate fail results
           command: |
-            wget $(curl https://circleci.com/api/v1.1/project/github/Timuriagudin/WDIO-CI/latest/artifacts?filter=successful -H "Circle-Token $CIRCLE_TOKEN" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_%:-]*') -O allure-previous.zip
-            test -f allure-previous.zip && unzip allure-previous.zip -d allure-previous
-            cp -r allure-previous/allure-report/history allure-results
+#            wget $(curl https://circleci.com/api/v1.1/project/github/Timuriagudin/WDIO-CI/latest/artifacts?filter=successful -H "Circle-Token $CIRCLE_TOKEN" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_%:-]*') -O allure-previous.zip
+#            test -f allure-previous.zip && unzip allure-previous.zip -d allure-previous
+#            cp -r allure-previous/allure-report/history allure-results
             npm run report:generate
             zip -r allure-report.zip allure-report
       - store_artifacts:
