@@ -31,7 +31,6 @@ jobs:
             npm run test:chrome:headless
             test -f allure-previous.zip && unzip allure-previous.zip -d allure-previous
             npm run report:generate
-            cp -r allure-previous/allure-report/history allure-results
             zip -r allure-report.zip allure-report
       - run:
           when: on_fail
@@ -39,7 +38,6 @@ jobs:
           command: |
             test -f allure-previous.zip && unzip allure-previous.zip -d allure-previous
             npm run report:generate
-            cp -r allure-previous/allure-report/history allure-results
             zip -r allure-report.zip allure-report
       - store_artifacts:
           path: allure-report.zip
