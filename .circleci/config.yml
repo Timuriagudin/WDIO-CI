@@ -42,7 +42,7 @@ jobs:
       - store_artifacts:
           path: allure-report.zip
 
-  workflows:
+workflows:
   commit:
     jobs:
       - build-and-test
