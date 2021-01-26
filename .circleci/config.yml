@@ -28,6 +28,7 @@ jobs:
       - run:
           name: Run tests
           command: |
+            https://circleci.com/api/v1.1/project/github/Timuriagudin/WDIO-CI/latest/artifacts?filter=successful
             wget $(curl https://circleci.com/api/v1.1/project/github/Timuriagudin/WDIO-CI/latest/artifacts?filter=successful -H "Circle-Token $CIRCLE_TOKEN" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_%:-]*') -O allure-previous.zip
             npm run test:chrome:headless
             test -f allure-previous.zip && unzip allure-previous.zip -d allure-previous
@@ -38,6 +39,7 @@ jobs:
           when: on_fail
           name: Generate fail results
           command: |
+            https://circleci.com/api/v1.1/project/github/Timuriagudin/WDIO-CI/latest/artifacts?filter=successful
             wget $(curl https://circleci.com/api/v1.1/project/github/Timuriagudin/WDIO-CI/latest/artifacts?filter=successful -H "Circle-Token $CIRCLE_TOKEN" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_%:-]*') -O allure-previous.zip
             test -f allure-previous.zip && unzip allure-previous.zip -d allure-previous
             npm run report:generate
