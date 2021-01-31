@@ -1,6 +1,5 @@
 const hooks = require('./config/hooks.conf');
 const base = require('./config/base.conf');
-
 exports.config = {
     hostname: '86.107.197.188',
     port: 4444,
